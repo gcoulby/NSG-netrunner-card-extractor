@@ -1,4 +1,6 @@
-extracted_images/
+extracted_images
+pdfs/
+cards.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
