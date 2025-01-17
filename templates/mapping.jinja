@@ -1,0 +1,5 @@
+[
+    {% for card in cards -%}
+    {"netrunnerdb_code":"{{ card.netrunnerdb_code }}","link":"{% if card.nsg %}https://raw.githubusercontent.com/gcoulby/NSG-netrunner-card-extractor/refs/heads/main/sliced_cards/{% else %}http://i.imgur.com/{% endif %}{{ card.link }}"}{% if not loop.last %},{% endif %}
+    {% endfor %}
+]
